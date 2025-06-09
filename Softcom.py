@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="Rekomendasi Major & Minor Mahasiswa", layout="centered")
+st.set_page_config(page_title="Major Finder: Rekomendasi Major & Minor Mahasiswa", layout="centered")
 
 # Styling
 st.markdown("""
@@ -17,12 +17,13 @@ st.markdown("""
 # Sidebar
 with st.sidebar:
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png", width=80)
-    st.markdown("## Sistem Rekomendasi")
-    st.markdown("- Berdasarkan Minat\n- Nilai Akademik\n- Tujuan Karier")
+    st.markdown("## Major Finder")
+    st.markdown("Sistem Rekomendasi Berdasarkan\n")
+    st.markdown("- Minat\n- Nilai Akademik\n- Tujuan Karier")
     st.caption("Metode: Fuzzy Logic + AHP")
 
 # Judul
-st.title("🎓 Rekomendasi Major & Minor Mahasiswa")
+st.title("🎓 Major Finder: Rekomendasi Major & Minor Mahasiswa")
 st.markdown("🔎 Metode: **Fuzzy Logic + AHP** _(berdasarkan survei preferensi)_")
 st.info("Isi data berikut untuk mendapatkan rekomendasi peminatan akademik terbaik untuk Anda.")
 
