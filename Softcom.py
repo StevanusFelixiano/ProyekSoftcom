@@ -18,7 +18,7 @@ st.markdown("""
 with st.sidebar:
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png", width=80)
     st.markdown("## Major Finder")
-    st.markdown("Sistem Rekomendasi Berdasarkan\n")
+    st.markdown("Sistem Rekomendasi Major & Minor Berdasarkan\n")
     st.markdown("- Minat\n- Nilai Akademik\n- Tujuan Karier")
     st.caption("Metode: Fuzzy Logic + AHP")
 
@@ -47,10 +47,10 @@ nilai['Jaringan'] = st.number_input("Nilai Matkul Jaringan Komputer", 0, 100, 80
 st.markdown("### 🎯 Kesesuaian Karier")
 karir = {}
 col4, col5 = st.columns(2)
-karir['Artificial Intelligence'] = col4.slider("Kesesuaian AI dengan karier", 0, 10, 5)
-karir['Sistem Informasi'] = col5.slider("Kesesuaian SI dengan karier", 0, 10, 5)
+karir['Artificial Intelligence'] = col4.slider("Kesesuaian AI dengan karier yang diminati", 0, 10, 5)
+karir['Sistem Informasi'] = col5.slider("Kesesuaian SI dengan karier yang diminati", 0, 10, 5)
 _, col6 = st.columns([1, 1])
-karir['Jaringan Komputer'] = col6.slider("Kesesuaian Jaringan dengan karier", 0, 10, 5)
+karir['Jaringan Komputer'] = col6.slider("Kesesuaian Jaringan dengan karier yang diminati", 0, 10, 5)
 
 # Fungsi bantu
 def nilai_to_score(n):
